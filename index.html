@@ -1,4 +1,4 @@
-아래 코드를 복사해 **`index.html`**로 저장한 뒤 브라우저에서 열면 돼요.
+아래 코드를 복사해서 `index.html`로 저장하면 돼.
 
 ```html
 <!doctype html>
@@ -6,402 +6,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>문장 탐정단 | 5분 영어 문법 퀴즈</title>
+  <title>찬기를 위한 예지 퀴즈 💘</title>
   <style>
-    :root {
-      font-family: system-ui, -apple-system, "Malgun Gothic", sans-serif;
-      color: #203047;
-      background: #f2f7ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at 10% 0%, #d8f5ee, transparent 38%),
-        radial-gradient(circle at 90% 15%, #ffe5cb, transparent 34%),
-        #f2f7ff;
-    }
-    main { max-width: 780px; margin: auto; padding: 28px 18px 60px; }
-    .top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .pill {
-      background: #fff;
-      border: 2px solid #dce7f5;
-      border-radius: 99px;
-      padding: 9px 16px;
-      font-weight: 800;
-    }
-    h1 {
-      font-size: clamp(2rem, 6vw, 3.6rem);
-      margin: 25px 0 6px;
-      letter-spacing: -.05em;
-    }
-    .lead { font-size: 1.1rem; line-height: 1.6; color: #52637b; }
-    .card {
-      background: #fff;
-      border: 2px solid #dfebf9;
-      border-radius: 24px;
-      box-shadow: 0 14px 35px #20304712;
-      padding: clamp(22px, 5vw, 38px);
-      margin-top: 28px;
-    }
-    .hidden { display: none !important; }
-    .badge {
-      display: inline-block;
-      background: #e5f6f0;
-      color: #086c57;
-      padding: 7px 13px;
-      border-radius: 9px;
-      font-weight: 800;
-    }
-    .sentence {
-      font-size: clamp(1.55rem, 5vw, 2.35rem);
-      font-weight: 850;
-      line-height: 1.5;
-      margin: 26px 0 12px;
-      letter-spacing: -.025em;
-    }
-    .target {
-      background: #ffdc83;
-      border-radius: 6px;
-      padding: 0 5px;
-      box-decoration-break: clone;
-    }
-    .prompt { font-size: 1.1rem; font-weight: 750; }
-    .options {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 11px;
-      margin: 22px 0;
-    }
-    .option {
-      min-height: 66px;
-      background: #f5f8fd;
-      border: 2px solid #dce6f3;
-      border-radius: 15px;
-      text-align: left;
-      padding: 14px;
-      font: inherit;
-      font-weight: 750;
-      color: #203047;
-      cursor: pointer;
-    }
-    .option:hover, .option:focus-visible {
-      border-color: #6559e8;
-      outline: none;
-    }
-    .option.correct { background: #dcf8e9; border-color: #25a66d; }
-    .option.wrong { background: #ffe8e7; border-color: #ee6b6b; }
-    .option:disabled { cursor: default; }
-    .feedback { min-height: 62px; line-height: 1.6; font-weight: 650; }
-    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
-    .primary, .secondary {
-      border: 0;
-      border-radius: 13px;
-      padding: 14px 22px;
-      font: inherit;
-      font-weight: 850;
-      cursor: pointer;
-    }
-    .primary { background: #5649d8; color: white; }
-    .primary:hover { background: #4033c1; }
-    .secondary { background: #e9edff; color: #4033a9; }
-    .primary:disabled { opacity: .45; cursor: default; }
-    .progress {
-      height: 12px;
-      background: #e6ecf7;
-      border-radius: 20px;
-      overflow: hidden;
-      margin-top: 20px;
-    }
-    .progress > div {
-      height: 100%;
-      background: #5fcbad;
-      transition: width .3s;
-    }
-    .guide { line-height: 1.8; color: #495c72; margin-top: 24px; }
-    .guide strong { color: #203047; }
-    .timer.urgent { color: #c83b39; border-color: #ffb6b2; }
-    footer { color: #738398; font-size: .85rem; margin-top: 25px; }
-    .result { font-size: 1.25rem; line-height: 1.6; }
-    .result strong { font-size: 2rem; color: #5649d8; }
-    @media (max-width: 520px) {
-      .options { grid-template-columns: 1fr; }
-      .top { align-items: flex-start; }
-      .pill { font-size: .85rem; }
-    }
+    *{box-sizing:border-box} body{margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(135deg,#ffe4ed,#f4ddff);font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;color:#442743;padding:18px}
+    .card{width:min(100%,440px);background:#fff;border-radius:28px;padding:30px 24px;text-align:center;box-shadow:0 18px 45px #9e5c8b33}
+    .tag{font-size:14px;font-weight:800;color:#a34882}.emoji{font-size:58px;margin:12px 0}h1{font-size:27px;margin:8px 0}p{line-height:1.5}.muted{color:#826b80}.top{display:flex;justify-content:space-between;font-size:14px;font-weight:800;color:#9a4382;margin-bottom:12px}
+    .bar{height:10px;background:#f4e8f0;border-radius:20px;overflow:hidden}.fill{height:100%;width:100%;background:#f05b9e;transition:width .3s} .question{font-size:23px;font-weight:850;margin:30px 0 22px}
+    button{border:0;cursor:pointer;font:inherit;font-weight:800;transition:transform .15s,background .15s}button:hover{transform:translateY(-2px)}button:focus-visible{outline:3px solid #7135bd;outline-offset:3px}
+    .primary{background:#ed579b;color:white;padding:15px 25px;border-radius:16px;width:100%;font-size:18px}.choice{display:block;width:100%;padding:17px;margin:12px 0;border-radius:16px;background:#fff0f7;color:#6a2855;border:2px solid #f6c9df;font-size:20px}.choice:hover{background:#ffe0ee}.choice.correct{background:#d8f7e5;border-color:#52bc83;color:#14663c}.choice.wrong{background:#ffe1e4;border-color:#e97984;color:#932d39}.choice:disabled{cursor:default;transform:none}.feedback{min-height:58px;font-size:18px;font-weight:800;margin:16px 0 7px}.hide{display:none}.small{font-size:13px;color:#967e92;margin-top:18px}
   </style>
 </head>
 <body>
-<main>
-  <div class="top">
-    <span class="pill">🕵️ 문장 탐정단</span>
-    <span id="timer" class="pill timer" aria-live="off">05:00</span>
-  </div>
-  <h1>문장의 비밀을 찾아라!</h1>
-  <p class="lead">초등 6학년 · 문장 성분과 1~5형식 · 약 5분</p>
-
-  <section id="intro" class="card">
-    <span class="badge">오늘의 미션</span>
-    <p class="sentence">8개의 문장을 분석하고 탐정 배지를 획득하세요! 🔎</p>
-    <p class="guide">
-      <strong>방법:</strong> 노란색 단어의 문장 성분을 고르거나,
-      문장 전체의 형식을 고르세요. 답을 고른 뒤 친구에게
-      <strong>“왜?”</strong>를 한 문장으로 말해 보세요.
-    </p>
-    <p class="guide">
-      <strong>도움말:</strong>
-      S 주어 · V 동사 · O 목적어 · C 보어 /
-      1형식 S+V · 2형식 S+V+C · 3형식 S+V+O ·
-      4형식 S+V+O+O · 5형식 S+V+O+C
-    </p>
-    <button class="primary" id="start">미션 시작 🚀</button>
-  </section>
-
-  <section id="game" class="card hidden" aria-live="polite">
-    <div class="top">
-      <span id="number" class="badge"></span>
-      <span id="score" class="pill"></span>
-    </div>
-    <div class="progress" aria-label="진행률"><div id="bar"></div></div>
-    <p id="sentence" class="sentence"></p>
-    <p id="prompt" class="prompt"></p>
-    <div id="options" class="options"></div>
-    <div id="feedback" class="feedback" role="status"></div>
-    <button id="next" class="primary hidden">다음 문제 →</button>
-  </section>
-
-  <section id="end" class="card hidden">
-    <span class="badge">미션 완료 🎉</span>
-    <p id="result" class="result"></p>
-    <p class="guide">
-      짝에게 가장 헷갈렸던 문장 하나를 골라
-      <strong>“주어는…, 동사는…, 그래서 …형식!”</strong>이라고 설명해 보세요.
-    </p>
-    <div class="actions">
-      <button id="retry" class="primary">다시 도전 ↻</button>
-      <button id="review" class="secondary">정답 한눈에 보기</button>
-    </div>
-    <div id="answers" class="guide hidden"></div>
-  </section>
-
-  <footer>
-    인터넷 연결 없이 브라우저에서 실행됩니다.
-    타이머가 끝나면 현재 점수로 마무리됩니다.
-  </footer>
-</main>
-
-<script>
-const questions = [
-  {
-    kind: '성분',
-    sentence: '<span class="target">The dog</span> sleeps.',
-    plain: 'The dog sleeps.',
-    prompt: '노란색 부분의 문장 성분은?',
-    options: ['주어 (S)', '동사 (V)', '목적어 (O)', '보어 (C)'],
-    answer: 0,
-    why: 'The dog는 잠을 자는 대상이므로 주어(S)예요.'
-  },
-  {
-    kind: '성분',
-    sentence: 'Mina <span class="target">likes</span> music.',
-    plain: 'Mina likes music.',
-    prompt: '노란색 부분의 문장 성분은?',
-    options: ['주어 (S)', '동사 (V)', '목적어 (O)', '보어 (C)'],
-    answer: 1,
-    why: 'likes는 주어가 하는 행동을 나타내므로 동사(V)예요.'
-  },
-  {
-    kind: '성분',
-    sentence: 'We made <span class="target">a cake</span>.',
-    plain: 'We made a cake.',
-    prompt: '노란색 부분의 문장 성분은?',
-    options: ['주어 (S)', '동사 (V)', '목적어 (O)', '보어 (C)'],
-    answer: 2,
-    why: 'a cake는 만든 대상이므로 목적어(O)예요.'
-  },
-  {
-    kind: '성분',
-    sentence: 'My brother is <span class="target">kind</span>.',
-    plain: 'My brother is kind.',
-    prompt: '노란색 부분의 문장 성분은?',
-    options: ['주어 (S)', '동사 (V)', '목적어 (O)', '보어 (C)'],
-    answer: 3,
-    why: 'kind는 주어 My brother를 설명하므로 보어(C)예요.'
-  },
-  {
-    kind: '형식',
-    sentence: 'Birds fly.',
-    plain: 'Birds fly.',
-    prompt: '이 문장의 형식은?',
-    options: [
-      '1형식 S+V', '2형식 S+V+C',
-      '3형식 S+V+O', '4형식 S+V+O+O'
-    ],
-    answer: 0,
-    why: 'Birds(S) + fly(V)로 이루어진 1형식이에요.'
-  },
-  {
-    kind: '형식',
-    sentence: 'The soup smells good.',
-    plain: 'The soup smells good.',
-    prompt: '이 문장의 형식은?',
-    options: [
-      '1형식 S+V', '2형식 S+V+C',
-      '3형식 S+V+O', '5형식 S+V+O+C'
-    ],
-    answer: 1,
-    why: 'The soup(S) + smells(V) + good(C). good은 수프를 설명해요.'
-  },
-  {
-    kind: '형식',
-    sentence: 'Dad gave me a book.',
-    plain: 'Dad gave me a book.',
-    prompt: '이 문장의 형식은?',
-    options: [
-      '2형식 S+V+C', '3형식 S+V+O',
-      '4형식 S+V+O+O', '5형식 S+V+O+C'
-    ],
-    answer: 2,
-    why: 'Dad(S) + gave(V) + me(간접목적어) + a book(직접목적어)이므로 4형식이에요.'
-  },
-  {
-    kind: '형식',
-    sentence: 'We call him Max.',
-    plain: 'We call him Max.',
-    prompt: '이 문장의 형식은?',
-    options: [
-      '2형식 S+V+C', '3형식 S+V+O',
-      '4형식 S+V+O+O', '5형식 S+V+O+C'
-    ],
-    answer: 3,
-    why: 'We(S) + call(V) + him(O) + Max(C). Max는 him을 설명하므로 5형식이에요.'
-  }
-];
-
-const $ = id => document.getElementById(id);
-let index = 0;
-let points = 0;
-let seconds = 300;
-let tick = null;
-let finished = false;
-
-function show(id) {
-  ['intro', 'game', 'end'].forEach(name => {
-    $(name).classList.toggle('hidden', name !== id);
-  });
-}
-
-function draw() {
-  const q = questions[index];
-  $('number').textContent = `문제 ${index + 1} / ${questions.length} · ${q.kind}`;
-  $('score').textContent = `⭐ ${points}점`;
-  $('bar').style.width = `${index / questions.length * 100}%`;
-  $('sentence').innerHTML = q.sentence;
-  $('prompt').textContent = q.prompt;
-  $('feedback').textContent = '';
-  $('next').classList.add('hidden');
-  $('options').replaceChildren();
-
-  q.options.forEach((label, i) => {
-    const button = document.createElement('button');
-    button.className = 'option';
-    button.textContent = label;
-    button.onclick = () => choose(i);
-    $('options').append(button);
-  });
-}
-
-function choose(i) {
-  const q = questions[index];
-  const buttons = [...$('options').children];
-  if (buttons[0].disabled) return;
-
-  buttons.forEach((button, n) => {
-    button.disabled = true;
-    if (n === q.answer) button.classList.add('correct');
-    if (n === i && i !== q.answer) button.classList.add('wrong');
-  });
-
-  if (i === q.answer) points++;
-  $('score').textContent = `⭐ ${points}점`;
-  $('feedback').textContent =
-    (i === q.answer ? '정답! 👏 ' : '아깝다! 💡 ') + q.why;
-
-  $('next').textContent =
-    index === questions.length - 1 ? '결과 보기 →' : '다음 문제 →';
-  $('next').classList.remove('hidden');
-}
-
-function finish() {
-  if (finished) return;
-  finished = true;
-  clearInterval(tick);
-  show('end');
-
-  const solved = index + ($('next').classList.contains('hidden') ? 0 : 1);
-  const message = points === 8
-    ? '완벽한 문장 탐정! 🏆'
-    : points >= 5
-      ? '좋아요! 틀린 문장의 성분을 다시 찾아봐요.'
-      : '한 번 더 도전하면 문장이 더 잘 보일 거예요!';
-
-  $('result').innerHTML =
-    `<strong>${points} / ${questions.length}점</strong><br>${message}<br>푼 문제: ${solved}개`;
-  $('answers').classList.add('hidden');
-}
-
-function start() {
-  clearInterval(tick);
-  index = 0;
-  points = 0;
-  seconds = 300;
-  finished = false;
-  $('timer').textContent = '05:00';
-  $('timer').classList.remove('urgent');
-  show('game');
-  draw();
-
-  tick = setInterval(() => {
-    seconds--;
-    $('timer').textContent =
-      `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
-    $('timer').classList.toggle('urgent', seconds <= 30);
-    if (seconds <= 0) finish();
-  }, 1000);
-}
-
-$('start').onclick = start;
-$('retry').onclick = start;
-$('next').onclick = () => {
-  index++;
-  if (index >= questions.length) finish();
-  else draw();
-};
-
-$('review').onclick = () => {
-  const answerBox = $('answers');
-  answerBox.classList.toggle('hidden');
-  $('review').textContent = answerBox.classList.contains('hidden')
-    ? '정답 한눈에 보기'
-    : '정답 접기';
-
-  if (!answerBox.classList.contains('hidden')) {
-    answerBox.replaceChildren();
-    questions.forEach((q, i) => {
-      const p = document.createElement('p');
-      p.textContent =
-        `${i + 1}. ${q.plain} → ${q.options[q.answer]} | ${q.why}`;
-      answerBox.append(p);
-    });
-  }
-};
-</script>
+  <main class="card" aria-live="polite">
+    <section id="intro">
+      <div class="tag">ONLY FOR 찬기 💌</div><div class="emoji">💖</div>
+      <h1>예지에 대해 얼마나 알아?</h1>
+      <p class="muted">2문제 · 제한 시간 30초<br>찬기의 예지력(?)을 보여줘!</p>
+      <button class="primary" id="start">퀴즈 시작하기 ✨</button>
+    </section>
+    <section id="game" class="hide">
+      <div class="top"><span id="progress">1 / 2</span><span id="timer">⏰ 30초</span></div>
+      <div class="bar"><div id="fill" class="fill"></div></div>
+      <div class="emoji" id="icon">🍚</div>
+      <div class="question" id="question"></div>
+      <div id="choices"></div>
+      <div class="feedback" id="feedback" role="status"></div>
+      <button class="primary hide" id="next">다음 문제 ➜</button>
+    </section>
+    <section id="result" class="hide">
+      <div class="emoji" id="resultIcon">💘</div><h1 id="resultTitle"></h1>
+      <p id="resultText"></p><button class="primary" id="restart">다시 도전하기 🔁</button>
+      <div class="small">정답: 간장게장 🦀 · 박찬기 💕</div>
+    </section>
+  </main>
+  <script>
+    const questions=[
+      {text:'예지가 가장 좋아하는 음식은?',choices:['간장게장 🦀','카레 🍛'],answer:0,icon:'🍽️',right:'맞아! 간장게장 없으면 안 돼 🦀',wrong:'땡! 예지의 최애는 간장게장 🦀'},
+      {text:'예지가 가장 좋아하는 사람은?',choices:['박찬기 💕','이재명'],answer:0,icon:'💘',right:'정답! 찬기 너야 💕',wrong:'에이~ 정답은 박찬기지 💕'}
+    ];
+    const $=id=>document.getElementById(id);
+    let index=0,score=0,time=30,tick=null,locked=false;
+    function show(id){['intro','game','result'].forEach(s=>$(s).classList.toggle('hide',s!==id))}
+    function start(){clearInterval(tick);index=0;score=0;time=30;locked=false;show('game');render();updateTime();tick=setInterval(()=>{time--;updateTime();if(time<=0)finish(true)},1000)}
+    function updateTime(){$('timer').textContent=`⏰ ${time}초`;$('fill').style.width=`${time/30*100}%`}
+    function render(){const q=questions[index];locked=false;$('progress').textContent=`${index+1} / ${questions.length}`;$('icon').textContent=q.icon;$('question').textContent=q.text;$('feedback').textContent='';$('next').classList.add('hide');$('choices').replaceChildren();q.choices.forEach((label,i)=>{const b=document.createElement('button');b.className='choice';b.textContent=label;b.onclick=()=>answer(i);$('choices').append(b)})}
+    function answer(choice){if(locked)return;locked=true;const q=questions[index],correct=choice===q.answer;if(correct)score++;[...$('choices').children].forEach((b,i)=>{b.disabled=true;if(i===q.answer)b.classList.add('correct');else if(i===choice)b.classList.add('wrong')});$('feedback').textContent=correct?q.right:q.wrong;$('next').textContent=index===questions.length-1?'결과 보기 💌':'다음 문제 ➜';$('next').classList.remove('hide')}
+    function finish(expired=false){clearInterval(tick);show('result');$('resultIcon').textContent=score===2?'🥰':'💌';$('resultTitle').textContent=expired?'시간 종료! ⏰':score===2?'예지 전문가 인증! 💯':`${score} / 2 정답!`;$('resultText').textContent=score===2?'역시 찬기, 예지를 아주 잘 아는구나 💕':expired?`30초 동안 ${score}개 맞혔어. 다시 도전해봐!`:'한 번 더 풀면 예지 박사 가능! 😆'}
+    $('start').onclick=start;$('restart').onclick=start;$('next').onclick=()=>{if(index<questions.length-1){index++;render()}else finish()};
+  </script>
 </body>
 </html>
 ```
